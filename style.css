@@ -1,0 +1,41 @@
+/****************************************************************************
+*
+*    Movie Tickets Booking 
+*    Author: Peyman Eskandari (https://github.com/p3yman)
+*
+****************************************************************************/
+
+/* Variables
+*****************************************************/
+:root {
+  --border-color: #e7e7e7;
+  --border: 1px solid var(--border-color);
+}
+
+/* Extra Resets
+*****************************************************/
+body {
+  padding: 0;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+article {
+  flex: 1;
+}
+
+aside {
+  width: 300px;
+  border-left: var(--border);
+}
