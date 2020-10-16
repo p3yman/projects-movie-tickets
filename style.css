@@ -8,16 +8,15 @@
 /* Variables
 *****************************************************/
 :root {
+  --color-primary: #2b2e4a;
+  --color-secondary: #e84545;
+
   --border-color: #e7e7e7;
   --border: 1px solid var(--border-color);
 }
 
 /* Extra Resets
 *****************************************************/
-body {
-  padding: 0;
-  margin: 0;
-}
 html {
   box-sizing: border-box;
 }
@@ -25,6 +24,28 @@ html {
   box-sizing: inherit;
 }
 
+/* Loading
+*****************************************************/
+#loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--color-primary);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#loading.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
 
 main {
   display: flex;
